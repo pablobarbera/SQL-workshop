@@ -1,8 +1,8 @@
-name: "Social Media Workshop"
+name: "SQL Workshop"
 exclude: ["README.md", "bib/*", "data"]
 output_dir: "docs"
 navbar:
-  title: "Social Media Workshop"
+  title: "SQL Workshop"
   left:
     - text: "Overview"
       href: "index.html"
@@ -12,7 +12,7 @@ navbar:
       href: "code.html"
   right:
     - icon: fa-github fa-lg
-      href: https://github.com/pablobarbera/social-media-workshop
+      href: https://github.com/pablobarbera/SQL-workshop
 
 output:
   html_document:

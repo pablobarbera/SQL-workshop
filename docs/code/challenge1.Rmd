@@ -7,7 +7,7 @@ output: html_document
 
 Practice writing SQL queries that answer the following questions using the database we just created:
 
-Who wrote the post that was shared the most times during this period? What does it say?
+1. Who wrote the post that was shared the most times during this period? What does it say?
 
 ```{r}
 library(DBI)
@@ -19,33 +19,33 @@ dbGetQuery(db,
 
 ```
 
-What about the post with the most comments?
+2. What about the post with the most comments?
 
 ```{r}
 
 
 ```
 
-Which was the post that received the most likes in January of 2017?
+3. Which was the post that received the most likes in January of 2017?
 
 ```{r}
 
 
 ```
 
-What was the photo posted by a Member of Congress that received the most "angry" reactions?
+4. What was the photo posted by a Member of Congress that received the most "angry" reactions?
 
 ```{r}
 
 ```
 
-Replicate the previous analysis for Democrats and then for Republicans. What do you learn?
+5. Replicate the previous analysis for Democrats and then for Republicans. What do you learn?
 
 ```{r}
 
 ```
 
-Which was the post mentioning "Trump" that was shared the most? And which was the post that received the most "love" reactions?
+6. Which was the post mentioning "Trump" that was shared the most? And which was the post that received the most "love" reactions?
 
 ```{r}
 

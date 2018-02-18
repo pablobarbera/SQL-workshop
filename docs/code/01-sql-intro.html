@@ -320,7 +320,7 @@ $(document).ready(function () {
 db &lt;- dbConnect(RSQLite::SQLite(), &quot;facebook-db.sqlite&quot;)
 
 # reading the first file
-congress &lt;- read.csv(&quot;../data/congress-facebook-2017.csv&quot;,
+congress &lt;- read.csv(&quot;~/data/congress-facebook-2017.csv&quot;,
     stringsAsFactors=F)
 
 # adding first table: user-level data
@@ -331,7 +331,7 @@ dbListFields(db, &quot;congress&quot;)
 dbGetQuery(db, 'SELECT * FROM congress LIMIT 5')</code></pre>
 <p>Note that we have used <code>dbWriteTable</code> to add the data frame to our database, and then check that it all worked with <code>dbListFields</code> and <code>dbGetQuery</code>. As we will see in a second, this second function is what we will use to query the database, and it will always return a table.</p>
 <p>We now switch to the second table. However, the files are too big to open them all in memory. Instead, we will open them one by one, and then <strong>append</strong> them to the table. Let’s see how that works…</p>
-<pre class="r"><code>fls &lt;- list.files(&quot;../data/posts&quot;, full.names=TRUE)
+<pre class="r"><code>fls &lt;- list.files(&quot;~/data/posts&quot;, full.names=TRUE)
 
 for (f in fls){
   
@@ -477,18 +477,18 @@ dbGetQuery(db, &quot;SELECT from_name, likes_count/comments_count, UPPER(type) F
 ## 9    Ted Poe                         11       VIDEO
 ## 10   Ted Poe                          9        LINK</code></pre>
 <pre class="r"><code># adding aliases to the new columns
-dbGetQuery(db, &quot;SELECT from_name, comments_count/likes_count AS like_ratio FROM posts LIMIT 10&quot;)</code></pre>
+dbGetQuery(db, &quot;SELECT from_name, likes_count/comments_count AS like_ratio FROM posts LIMIT 10&quot;)</code></pre>
 <pre><code>##    from_name like_ratio
-## 1    Ted Poe          0
-## 2    Ted Poe          0
-## 3    Ted Poe          0
-## 4    Ted Poe          0
-## 5    Ted Poe          0
-## 6    Ted Poe          0
-## 7    Ted Poe          0
-## 8    Ted Poe          0
-## 9    Ted Poe          0
-## 10   Ted Poe          0</code></pre>
+## 1    Ted Poe         13
+## 2    Ted Poe         35
+## 3    Ted Poe          1
+## 4    Ted Poe          4
+## 5    Ted Poe         21
+## 6    Ted Poe         17
+## 7    Ted Poe         14
+## 8    Ted Poe          5
+## 9    Ted Poe         11
+## 10   Ted Poe          9</code></pre>
 <pre class="r"><code># it's often a good idea to write a query in multiple lines so that it's easier to read it:
 dbGetQuery(db, &quot;SELECT from_name, 
            likes_count/comments_count AS like_ratio 
@@ -693,6 +693,18 @@ dbGetQuery(db,
   &quot;SELECT from_name, message, likes_count, datetime
   FROM posts
   ORDER BY likes_count DESC
+  LIMIT 1&quot;)</code></pre>
+<pre><code>##                       from_name
+## 1 U.S. Senator Elizabeth Warren
+##                                                                                                                                                                                                                                            message
+## 1 Tonight we fight for American values at airports all across this country. I'm at Logan Airport tonight to say: our diversity makes our country strong. We will not allow a Muslim ban in the United States of America. #NoBanNoWall #nomuslimban
+##   likes_count            datetime
+## 1      421064 2017-01-29 01:59:12</code></pre>
+<pre class="r"><code># You can also specify the column number instead of the name
+dbGetQuery(db, 
+  &quot;SELECT from_name, message, likes_count, datetime
+  FROM posts
+  ORDER BY 3 DESC
   LIMIT 1&quot;)</code></pre>
 <pre><code>##                       from_name
 ## 1 U.S. Senator Elizabeth Warren

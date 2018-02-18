@@ -20,7 +20,7 @@ library(DBI)
 db <- dbConnect(RSQLite::SQLite(), "facebook-db.sqlite")
 
 # reading the first file
-congress <- read.csv("../data/congress-facebook-2017.csv",
+congress <- read.csv("~/data/congress-facebook-2017.csv",
 	stringsAsFactors=F)
 
 # adding first table: user-level data
@@ -36,7 +36,7 @@ Note that we have used `dbWriteTable` to add the data frame to our database, and
 We now switch to the second table. However, the files are too big to open them all in memory. Instead, we will open them one by one, and then __append__ them to the table. Let's see how that works...
 
 ```{r, eval=FALSE}
-fls <- list.files("../data/posts", full.names=TRUE)
+fls <- list.files("~/data/posts", full.names=TRUE)
 
 for (f in fls){
   
@@ -106,7 +106,7 @@ dbGetQuery(db, "SELECT name, party FROM congress LIMIT 10")
 dbGetQuery(db, "SELECT from_name, likes_count/comments_count, UPPER(type) FROM posts LIMIT 10")
 
 # adding aliases to the new columns
-dbGetQuery(db, "SELECT from_name, comments_count/likes_count AS like_ratio FROM posts LIMIT 10")
+dbGetQuery(db, "SELECT from_name, likes_count/comments_count AS like_ratio FROM posts LIMIT 10")
 
 # it's often a good idea to write a query in multiple lines so that it's easier to read it:
 dbGetQuery(db, "SELECT from_name, 

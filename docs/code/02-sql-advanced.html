@@ -399,7 +399,7 @@ dbGetQuery(db, 'SELECT COUNT(*) FROM posts')</code></pre>
   FROM posts JOIN Congress
     ON congress.screen_name = posts.screen_name
   WHERE congress.party = 'Democrat'
-  GROUP BY domain, congress.party
+  GROUP BY domain
   ORDER BY domain_count DESC
   LIMIT 20&quot;)</code></pre>
 <pre><code>##       party             domain domain_count
