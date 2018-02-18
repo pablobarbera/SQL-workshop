@@ -1,0 +1,49 @@
+---
+title: Course outline and readings
+---
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+
+<h2 id="key" class="panel-title">
+<a data-toggle="collapse" href="#collapse1">Recommended readings</a>
+</h2>
+</div>
+<div id="collapse1" class="panel-collapse collapse in" style="margin:12px">
+
+<ul>
+<li><p>Munzert, S., Rubba, C., Meißner, P., & Nyhuis, D. (2014). <a href="https://books.google.co.uk/books?hl=en&lr=&id=hO7sBQAAQBAJ&oi=fnd&pg=PA196&dq=simon+munzert+automated+data&ots=BJKh5vZcM7&sig=77ap73jzlSQFfG66Rp_DpaSNJPo#v=onepage&q=simon%20munzert%20automated%20data&f=false">Automated data collection with R: A practical guide to web scraping and text mining.</a> John Wiley & Sons.</p></li>
+<li><p>Beaulieu, A. (2009). <a href="https://books.google.co.uk/books?hl=en&lr=&id=1PgCCVryjOQC&oi=fnd&pg=PR3&dq=learning+sql+alan&ots=X6M3Iaz1wO&sig=38Fp1kDlxM8TF7miw0K2CNcKib4#v=onepage&q=learning%20sql%20alan&f=false">Learning SQL: Master SQL Fundamentals.</a> O'Reilly Media, Inc.</p></li>
+<li><p>Stephens, R., Plew, R., & Jones, A. D. (2009). <a href="https://books.google.co.uk/books?hl=en&lr=&id=9fDZ_rVoxx0C&oi=fnd&pg=PR5&dq=%22Sams+Teach+Yourself+SQL+in+24+Hours%22&ots=UkaClJDMem&sig=wgLy-DG3bc7g0LO0_Ojy5Cy2Ejs#v=onepage&q=%22Sams%20Teach%20Yourself%20SQL%20in%2024%20Hours%22&f=false">Sams teach yourself SQL in one hour a day</a>. Sams Publishing.</p></li>
+<li><p><a href="https://cloud.google.com/bigquery/docs/reference/legacy-sql">Google BigQuery: Legacy SQL Functions and Operators.</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="recommended" class="panel-title">
+<a data-toggle="collapse" href="#collapse2">Other online resources</a>
+</h2>
+</div>
+<div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
+
+<ul>
+<li><p><a href="http://www.louisaslett.com/RStudio_AMI/">RStudio Server Amazon Machine Image.</a></p>
+</li>
+
+<li><p><a href="http://pablobarbera.com/social-media-workshop/">Workshop materials: collecting and analyzing social media data with R</a>, by Pablo Barberá. LSE, January 2018.</p></li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+
+
+

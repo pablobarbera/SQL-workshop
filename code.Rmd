@@ -1,0 +1,61 @@
+---
+title: Code
+---
+
+The following list provides links to the slides code used in the guided coding sessions. The solutions to the challenges will be made available through RStudio Server.
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="session1" class="panel-title">
+<a data-toggle="collapse" href="#collapse2">Session 1: Introduction to SQL.</a>
+</h2>
+</div>
+<div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
+
+<ul>
+<li><p><a href="SQL-slides.pdf">SLIDES: Querying large-scale online datasets with SQL and Google BigQuery</a></p>
+</li>
+
+<li><p><a href="code/00-setup.html">Introduction to RMarkdown and Setup</a> (<a href="code/00-setup.Rmd">.Rmd file</a>)</p>
+</li>
+<li><p><a href="code/01-sql-intro.html">Basics of SQL queries</a> (<a href="code/01-sql-intro.Rmd">.Rmd file</a>)</p>
+</li>
+<li><p><a href="challenges/challenge1.Rmd">Coding challenge 1 (.Rmd file)</a></p>
+</li>
+<li><p><a href="code/02-sql-advanced.html">Querying multiple tables. Grouping and aggregating operations.</a> (<a href="code/02-sql-advanced.Rmd">.Rmd file</a>)</p>
+</li>
+</li>
+<li><p><a href="challenges/challenge1.Rmd">Coding challenge 2 (.Rmd file)</a></p>
+</li>
+
+
+
+</ul>
+</div>
+</div>
+</div>
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-3" class="panel-title">
+<a data-toggle="collapse" href="#collapse3">Session 2: Google BigQuery.</a>
+</h2>
+</div>
+<div id="collapse3" class="panel-collapse collapse in" style="margin:12px">
+
+<ul>
+<li><p><a href="code/03-bigquery-intro.html">Introduction to Google BigQuery</a> (<a href="code/03-bigquery-intro.Rmd">.Rmd file</a>)</p>
+</li>
+<li><p><a href="challenges/challenge3.Rmd">Coding challenge 2 (.Rmd file)</a></p>
+</li>
+<li><p><a href="code/04-bigquery-advanced.html">Analyzing a billion-row dataset with Google BigQuery</a> (<a href="code/04-bigquery-advanced.Rmd">.Rmd file</a>)</p>
+</li>
+<li><p><a href="challenges/challenge4.Rmd">Coding challenge 4 (.Rmd file)</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+

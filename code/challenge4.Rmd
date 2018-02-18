@@ -1,0 +1,82 @@
+---
+title: "Challenge 4: Querying an Google BigQuery database"
+author: Pablo Barbera
+date: February 19, 2018
+output: html_document
+---
+
+You will now continue practicing how to write SQL queries using a Google BigQuery database that contains all Citi Bike trips (NYC's bike-sharing service) since Citi Bike launched in September 2013. More information about the database is available [here](
+https://cloud.google.com/bigquery/public-data/nyc-citi-bike).
+
+1. First, connect to the database and count how many rows it contains:
+
+```{r}
+library(bigrquery)
+project <- "usc-barbera"
+
+get_table(project="bigquery-public-data",
+          dataset="new_york",
+          table="citibike_trips")
+
+# how many trips in database?
+query_exec(
+  "SELECT COUNT(*) AS count
+  FROM [bigquery-public-data:new_york.citibike_trips]",
+	project = project, useLegacySql = FALSE)
+
+# see first line
+query_exec(
+  "SELECT *
+  FROM [bigquery-public-data:new_york.citibike_trips]
+  LIMIT 1",
+	project = project, useLegacySql = FALSE)
+```
+
+2. Which are the 10 most popular stations in terms of how many trips started there?
+
+```{r}
+
+```
+
+3. What is the average trip duration based on the hour of the day when they start?
+
+```{r}
+
+```
+
+4. What is the average trip duration of a CitiBike trip in NYC?
+
+```{r}
+
+```
+
+5. What is the average trip duration based on the age of the riders?
+
+```{r}
+
+```
+
+6. What is the average distance of a CitiBike trip in NYC?
+
+```{r}
+
+```
+
+7. What is the average distance of a trip based on gender?
+
+```{r}
+
+```
+
+8. What is the average speed of a CitiBike trip?
+
+```{r}
+
+```
+
+9. What is the average speed based on age?
+
+```{r}
+
+```
+
