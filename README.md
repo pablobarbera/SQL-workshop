@@ -1,6 +1,6 @@
 # Workshop: Querying large-scale online datasets: SQL and Google BigQuery
 
-This repository contains the materials for a short workshop entitled "CQuerying large-scale online datasets: SQL and Google BigQuery," versions of which I have taught at the ECPR summer school and the University of Southern California. It will next be offered at the London School of Economics on February 2018.
+This repository contains the materials for a short workshop entitled "CQuerying large-scale online datasets: SQL and Google BigQuery," versions of which I have taught at the ECPR summer school and the University of Southern California. It will next be offered at the London School of Economics on December 2018.
 
 The worskhop website is at http://pablobarbera.com/SQL-workshop/
 
