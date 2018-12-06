@@ -29,14 +29,14 @@ dbGetQuery(db,
   "SELECT posts.from_name, posts.message, posts.shares_count, congress.party 
   FROM posts JOIN congress
     ON congress.screen_name = posts.screen_name
-  WHERE party = 'Democrat'
+  WHERE congress.party = 'Democrat'
   ORDER BY shares_count DESC
   LIMIT 1")
 dbGetQuery(db, 
   "SELECT posts.from_name, posts.message, posts.shares_count, congress.party 
   FROM posts JOIN congress
     ON congress.screen_name = posts.screen_name
-  WHERE party = 'Republican'
+  WHERE congress.party = 'Republican'
   ORDER BY shares_count DESC
   LIMIT 1")
 ```
@@ -116,7 +116,7 @@ dbGetQuery(db,
 
 # number of posts by day of the month
 dbGetQuery(db, 
-  "SELECT SUBSTR(date, 9, 10) AS day_of_month, COUNT(*) as post_count
+  "SELECT SUBSTR(date, 9, 2) AS day_of_month, COUNT(*) as post_count
   FROM posts
   GROUP BY day_of_month")
 

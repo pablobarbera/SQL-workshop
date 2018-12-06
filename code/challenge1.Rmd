@@ -39,7 +39,7 @@ dbGetQuery(db,
 
 ```
 
-5. Replicate the previous analysis for Democrats and then for Republicans. What do you learn?
+5. What was the post by `senatorsanders` that received the most "angry" reactions? And the most "love" reactions?
 
 ```{r}
 
