@@ -37,7 +37,7 @@ query_exec(
 get_table(project=project, dataset="twitter_panel", table="tweets_20170721")
 ```
 
-The user-level table has information about 200,000 users. For each of them, the following variables are available: `user_id_str` (user ID), `male` (TRUE if user is predicted to be male), predicted `age` (with values 1 = 18-25, 2 = 26-40, 3 = 40+), predicted `party` (with values 1 = None/Others, 2 = Democrat, 3 = Republican), predicted `race` (with values 1 = Black, 2 = Hispanic, 3 = Asian, 4 = White), predicted `turnout` in 2012, `name` of user, `description` of user, `followers_count`, `statuses_count, `friends_count`, `location` field in user's profile, and `lang` (account language).
+The user-level table has information about 200,000 users. For each of them, the following variables are available: `user_id_str` (user ID), `male` (TRUE if user is predicted to be male), predicted `age` (with values 1 = 18-25, 2 = 26-40, 3 = 40+), predicted `party` (with values 1 = None/Others, 2 = Democrat, 3 = Republican), predicted `race` (with values 1 = Black, 2 = Hispanic, 3 = Asian, 4 = White), predicted `turnout` in 2012, `name` of user, `description` of user, `followers_count`, `statuses_count`, `friends_count`, `location` field in user's profile, and `lang` (account language).
 
 More information about how this dataset was collected is available [in this paper](http://pablobarbera.com/static/less-is-more.pdf).
 
