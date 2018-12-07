@@ -42,13 +42,7 @@ for i in 0{1..9} {10..25}
 do
 	cp /home/rstudio/code/challenge3-solutions.Rmd /home/sql$i/code/
 	cp /home/rstudio/code/challenge3-solutions.html /home/sql$i/code/
-	sudo chown sql$i -R /home/sql$i/
-done
-
-
-# solutions challenge 3
-for i in 0{1..9} {10..25}
-do
 	cp /home/rstudio/code/challenge4-solutions.Rmd /home/sql$i/code/
 	sudo chown sql$i -R /home/sql$i/
 done
+
